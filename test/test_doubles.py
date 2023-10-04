@@ -18,7 +18,7 @@ class DocTestDouble:
     Tet double for spaCy Doc
     """
     def __init__(self, sent, ents):
-        self.ents = [SpanTestDouble(ent['text'], ent['label']) for  ent in ents]
+        self.ents = [SpanTestDouble(ent['text'], ent['label_']) for  ent in ents]
 
     def patch_method(self, attr, return_value):
         def patched(): return return_value

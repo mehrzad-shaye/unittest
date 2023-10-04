@@ -12,6 +12,6 @@ class NamedEntityClient:
    @staticmethod
    def map_label(label):
       label_map = {
-         'PERSON': 'person'
+         'PERSON': 'Person'
       }
       return label_map.get(label)
