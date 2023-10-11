@@ -24,4 +24,3 @@ def get_named_ents():
 
 if __name__ == "__main__":
     app.run(debug=True)
- 

@@ -67,6 +67,6 @@ class TestNerClient(unittest.TestCase):
         ner = NamedEntityClient(model)
         result = ner.get_ents('...')
         expected_result = {'ents':
-                    [{'ent': 'Australia', 'label': 'Location'},
-                    {'ent': 'judith Polgar', 'label': 'Person'}], 'html': ""}
+                           [{'ent': 'Australia', 'label': 'Location'},
+                            {'ent': 'judith Polgar', 'label': 'Person'}], 'html': ""}
         self.assertListEqual(result['ents'], expected_result['ents'])
